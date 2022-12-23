@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import Meta from "../components/seo/Meta";
 import { prefix } from "../utils/prefix";
 
 export default function Home() {
