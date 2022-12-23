@@ -17,7 +17,7 @@
 
 # Component Directory
 
-import { ThemeProvider } from "styled-components";
+````import { ThemeProvider } from "styled-components";
 import { Theme } from "../styles/theme";
 import { Global } from "styles/global";
 import { prefix } from "../utils/prefix";
@@ -30,6 +30,7 @@ return (
     </ThemeProvider>
 
 );
-}
+} ```
 
 export default MyApp;
+````
