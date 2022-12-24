@@ -20,7 +20,7 @@ const HomeCard = ({ header, image, text, footer, pager }) => {
       </div>
       <div style={{ marginBottom: "72px" }}>
         <ProductButton type="button">Contact Us</ProductButton>
-        <ProductButton href={pager} type="button">
+        <ProductButton href={prefix + pager} type="button">
           Read more ...
         </ProductButton>
       </div>
