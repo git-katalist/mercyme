@@ -1,6 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import Meta from "../components/seo/Meta";
 
 export default class MyDocument extends Document {
   //--------------For styled-components only------------//
