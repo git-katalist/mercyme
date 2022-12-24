@@ -21,7 +21,7 @@ export default function Home() {
             header="Face Masks"
             image={prefix + webUrl}
             text="Masks are made to contain droplets and particles you breathe, cough, or sneeze out"
-            pager={`${prefix} /products/face-mask `}
+            pager={`${prefix}/products/face-mask `}
             id="facemask"
           />
           <HomeCard
