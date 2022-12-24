@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { css, createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
 *, *::before, *::after{
@@ -10,6 +10,7 @@ html, body{
 height:100%;
 background-color:teal;
 color: white;
+font-family: 'Poppins', sans-serif;
 }
 #__next{
 height:auto;
@@ -23,6 +24,7 @@ body{
 main{
     h1{
         padding: 2rem 0;
+        font-weight: 500;
     }
     h4{
         color: yellow;
@@ -35,4 +37,19 @@ main{
 }
 `;
 
-export { Global };
+const Container = styled.div`
+  /* padding: 1.5rem 1rem; */
+  width: 100%;
+  margin: 0 auto;
+
+  ${({ fluid }) =>
+    fluid &&
+    css`
+      max-width: 1440px;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    `}
+`;
+
+export { Global, Container };

@@ -3,6 +3,7 @@
 const { prefix } = "./utils/prefix";
 
 const nextConfig = {
+  eslint: { ignoreDuringBuilds: true },
   reactStrictMode: true,
   compiler: {
     styledComponents: true,
