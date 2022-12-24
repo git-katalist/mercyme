@@ -2,6 +2,7 @@ import Link from "next/link";
 import { StyledNav, LogoWrapper, Logo, Links } from "./StyledNav";
 import { favicon } from "../../public/index";
 import { prefix } from "../../utils/prefix";
+import { navLinks } from "../../data/constants";
 
 const Nav = () => (
   <StyledNav>
@@ -11,9 +12,11 @@ const Nav = () => (
       {/* <Logo /> */}
     </LogoWrapper>
     <Links>
-      <Link href="#"></Link>
-      <Link href="#"></Link>
-      <Link href="#"></Link>
+      {navLinks.map((item, index) => (
+        <Link href={item.linkUrl} key={index}>
+          {item.name}
+        </Link>
+      ))}
     </Links>
   </StyledNav>
 );
