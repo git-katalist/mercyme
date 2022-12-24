@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { StyledNav, LogoWrapper, Logo, Links } from "./StyledNav";
-import { favicon } from "../../public/index";
+const favicon = "/favicon.ico";
 import { prefix } from "../../utils/prefix";
 import { navLinks } from "../../data/constants";
 
 const Nav = () => (
   <StyledNav>
     <LogoWrapper>
-      <Logo src={prefix + favicon.src} alt="" />
+      <Logo src={prefix + favicon} alt="" />
       {/* <img src={prefix + favicon.src} alt="" /> */}
       {/* <Logo /> */}
     </LogoWrapper>
