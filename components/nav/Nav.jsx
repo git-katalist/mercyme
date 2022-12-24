@@ -7,7 +7,7 @@ import { navLinks } from "../../data/constants";
 const Nav = () => (
   <StyledNav>
     <LogoWrapper>
-      <Link href={prefix + "/"}>
+      <Link href="/">
         <Logo src={prefix + favicon} alt="" />
       </Link>
       {/* <img src={prefix + favicon.src} alt="" /> */}
@@ -15,7 +15,7 @@ const Nav = () => (
     </LogoWrapper>
     <Links>
       {navLinks.map((item, index) => (
-        <Link href={prefix + item.linkUrl} key={index}>
+        <Link href={item.linkUrl} key={index}>
           {item.name}
         </Link>
       ))}
